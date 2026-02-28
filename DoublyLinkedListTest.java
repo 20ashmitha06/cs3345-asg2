@@ -5,34 +5,38 @@ public class DoublyLinkedListTest {
 		
 		// Comment only the test functions you want to run
 		
-		// testPrintEmptyListForward();
-		// testPrintEmptyListBackward();
+		testPrintEmptyListForward();
+		 testPrintEmptyListBackward();
 		// testEmptyGet();
-		// testAddFirstAndGet();
-		// testAddFirstForwards();
-		// testAddFirstBackwards();
-		// testAddLastAndGet();
-		// testAddLastForwards();
+		 testAddFirstAndGet();
+		 testAddFirstForwards();
+		 testAddFirstBackwards();
+		 testAddLastAndGet();
+		 testAddLastForwards();
 		// testAddLastBackwards();
-		// testIsEmpty();
-		// testGetLength();
-		// testRemoveFromEmptyList();
-		// testRemoveFromListWithOneElementNegative();
-		// testRemoveFromListWithOneElementPositive();
-		// testRemoveFromListWithTwoElementNegative();
-		// testRemoveFromListWithTwoElementPositive();
-		// testRemoveFromListWithThreeElementNegative();
-		// testRemoveFromListWithThreeElementPositive();
-		// testIterator();
+		 testIsEmpty();
+		 testGetLength();
+		 testRemoveFromEmptyList();
+		testRemoveFromListWithOneElementNegative();
+		testRemoveFromListWithOneElementPositive();
+		testRemoveFromListWithTwoElementNegative();
+		testRemoveFromListWithTwoElementPositive();
+		testRemoveFromListWithThreeElementNegative();
+		testRemoveFromListWithThreeElementPositive();
+		testIterator();
 		
 
 	}
 	
 	public static void testPrintEmptyListForward() {
 		//TODO
+    	DoublyLinkedList<String> list = new DoublyLinkedList<>();
+    	list.print(); 
 	}
 	public static void testPrintEmptyListBackward() {
 		//TODO
+    	DoublyLinkedList<String> list = new DoublyLinkedList<>();
+    	list.printBackwards();
 	}
 	
 	public static void testEmptyGet() {
@@ -269,14 +273,17 @@ public class DoublyLinkedListTest {
 		
 		System.out.println("");
 		System.out.println("-------------- testIterator ------------:");
-		List<String> list = new DoublyLinkedList<String>();
+		DoublyLinkedList<String> list = new DoublyLinkedList<>();
 		list.addLast("Apple");
 		list.addLast("Cherry");
 		list.addLast("Banana");
 
 		//TODO	
                 // ADD code to obtain iterator object, then uses it to iterate through the list and print its data.
-		
+		 System.out.println("Iterating through list:");
+		for (String s : list) {
+			System.out.println(s);
+		}
 		System.out.println("-------------- testIterator  ------------:");
 	}
 
